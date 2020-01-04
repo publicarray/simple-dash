@@ -1,58 +1,54 @@
 html, body {
-	height: 100%;
-	width: 100%;
-	margin: 0;
+    height: 100%;
+    width: 100%;
+    margin: 0;
 }
 body {
-	z-index: 1;
-	background-position: center;
-	background-attachment: fixed;
-}
-
-.github-corner {
-	opacity: 0.4;
-}
-.github-corner:hover {
-	opacity: 1;
+    z-index: 1;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 #wrapper {
-	height: 100%;
-	display: grid;
+    height: 100%;
+    display: grid;
 }
 #itemlist {
-	display: inline-grid;
-	grid-template-columns: repeat(2, 1fr);
-	margin: auto;
+    display: inline-grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
 }
 @media only screen and (min-width: 600px) {
-	#itemlist {
-		grid-template-columns: repeat(3, 1fr);
-	}
+    #itemlist {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 @media only screen and (min-width: 800px) {
-	#itemlist {
-		grid-template-columns: repeat(6, 1fr);
-	}
+    #itemlist {
+        grid-template-columns: repeat(6, 1fr);
+    }
 }
 
 #itemlist {
-	border-radius: 6px;
-	background-color: rgba(0, 0, 0, .4);
-	font-size: 4em;
+    border-radius: 6px;
+    background-color: rgba(0, 0, 0, .4);
 }
-#itemlist>* {
-	padding: 15px;
-	margin: 0 auto;
+#itemlist img {
+    width:64px;
+    height:64px;
+    transition: all .2s ease-out;
 }
 
+#itemlist img:hover {
+    filter: drop-shadow(0px 0px 18px #000);
+    transform: scale(1.2);
+}
 
-
-
-/* link colors */
 #itemlist a {
-	color: #fff;
+    color: #fff;
 }
-#itemlist a:hover {
-	color: #c4c4c4;
+
+#itemlist>* {
+    padding: 15px;
+    margin: 0 auto;
 }
